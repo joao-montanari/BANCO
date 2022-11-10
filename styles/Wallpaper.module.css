@@ -1,0 +1,29 @@
+.container{
+    width: 100%;
+    height: 500px;
+    background-color: #594747;
+    display: flex;
+    position: relative;
+}
+
+.container::before{
+    top: 0;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: circle(20% at right 80%);
+    background: linear-gradient(#6d32ed, #9a7dcb);
+}
+
+.container::after{
+    top: 0;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: circle(10% at 0 10%);
+    background: linear-gradient(#7345d6, #6743a5);
+}
