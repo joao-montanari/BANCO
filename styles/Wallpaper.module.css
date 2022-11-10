@@ -1,9 +1,9 @@
 .container{
     width: 100%;
-    height: 500px;
-    background-color: #594747;
+    height: 400px;
     display: flex;
     position: relative;
+    background-color: #472a85;
 }
 
 .container::before{
@@ -13,8 +13,8 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    clip-path: circle(20% at right 80%);
-    background: linear-gradient(#6d32ed, #9a7dcb);
+    clip-path: circle(20% at right 70%);
+    background: linear-gradient(#6b2cf1, #9a82c4);
 }
 
 .container::after{
@@ -24,6 +24,6 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    clip-path: circle(10% at 0 10%);
-    background: linear-gradient(#7345d6, #6743a5);
+    clip-path: circle(30% at 0 10%);
+    background: linear-gradient(#6b2cf1, #9a82c4);
 }
