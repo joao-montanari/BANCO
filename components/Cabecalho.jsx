@@ -7,8 +7,8 @@ export default function Cabecalho(){
         <div className={Styles.container}>
             <Image src='/img/logo.png' width={120} height={70}/>
             <ul>
-                <li> <Link href='/'> <button>Cartão</button> </Link> </li>
-                <li> <Link href='/'> <button>Sobre Nós</button> </Link> </li>
+                <li> <Link href='/cartao'> <button>Cartão</button> </Link> </li>
+                <li> <Link href='/AboutUs'> <button>Sobre Nós</button> </Link> </li>
                 <li> <Link href='/'> <button>Home</button> </Link> </li>
             </ul>
             <Link href='/'> <button className={Styles.btn}>Quero a minha conta</button> </Link>

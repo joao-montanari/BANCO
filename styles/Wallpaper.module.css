@@ -3,7 +3,7 @@
     height: 400px;
     display: flex;
     position: relative;
-    background-color: #472a85;
+    background-color: #00BFA6;
 }
 
 .container::before{
@@ -14,7 +14,7 @@
     height: 100%;
     position: absolute;
     clip-path: circle(20% at right 70%);
-    background: linear-gradient(#6b2cf1, #9a82c4);
+    background: linear-gradient(#42FF8A, #00ff40);
 }
 
 .container::after{
@@ -25,5 +25,5 @@
     height: 100%;
     position: absolute;
     clip-path: circle(30% at 0 10%);
-    background: linear-gradient(#6b2cf1, #9a82c4);
+    background: linear-gradient(#00ff40,#42FF8A);;
 }

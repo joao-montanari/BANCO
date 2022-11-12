@@ -1,0 +1,57 @@
+.container{
+    margin: auto;
+    width: 550px;
+    height: 100px;
+    display: flex;
+    border-radius: 5px;
+    border: 3px solid #000;
+    transition: all 400ms ease;
+}
+
+.container:hover{
+    animation: bounce 800ms;
+}
+
+.icone{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img{
+    margin: auto;
+}
+
+.conteudo{
+    width: 450px;
+    height: 100%;
+    text-align: left;
+}
+
+.conteudo h1{
+    font-size: 25px;
+    text-align: left;
+    padding: 5px 5px 0px;
+}
+
+.conteudo p{
+    padding: 5px;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0px);
+    }
+
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}

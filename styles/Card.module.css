@@ -7,17 +7,20 @@
     text-align: center;
     border-radius: 5px;
     backdrop-filter: blur(8px);
-    box-shadow: -10px 15px 30px #9a82c4;
+    box-shadow: -10px 15px 30px #42FF8A;
     transition: all 400ms ease;
 }
 
 .container h1{
     font-size: 30px;
-    color: #6b2cf1;
+    color: #00ff40;
 }
 
 .container:hover{
-    padding: 15px;
+    padding: 20px;
+    box-shadow: none;
+    border-radius: 0px;
+    border: 1px solid #42FF8A;
 }
 
 .container p{

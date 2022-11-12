@@ -1,10 +1,10 @@
 import Styles from '../styles/Card.module.css';
 
-export default function Card(){
+export default function Card(props){
     return(
         <div className={Styles.container}>
-            <h1>Vantagens exclusivas</h1>
-            <p>Teste de texto para poder preencher os card da home do banco, vangens de ter o banco do montanari</p>
+            <h1>{props.titulo}</h1>
+            <p>{props.texto}</p>
         </div>
     )
 }
