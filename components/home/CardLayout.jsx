@@ -1,7 +1,7 @@
-import Styles from '../styles/GridLayout.module.css';
+import Styles from '../../styles/GridLayout.module.css';
 import Link from 'next/link';
 
-import Card from './Card';
+import Card from '../Card';
 
 export default function CardLayout(){
     return(

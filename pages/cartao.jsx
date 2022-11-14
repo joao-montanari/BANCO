@@ -1,8 +1,11 @@
+import Wallpaper from "../components/cartao/Wallpaper";
+import AreaCards from "../components/cartao/AreaCards";
 
 export default function Cartao(){
     return(
         <>
-            <h1>Área cartão</h1>
+            <Wallpaper/>
+            <AreaCards/>
         </>
     )
 }

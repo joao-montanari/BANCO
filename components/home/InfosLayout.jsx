@@ -1,6 +1,6 @@
-import Styles from '../styles/InfosLayout.module.css';
+import Styles from '../../styles/InfosLayout.module.css';
 
-import WideCard from './WideCard';
+import WideCard from '../WideCard';
 
 export default function InfosLayout(){
     return(

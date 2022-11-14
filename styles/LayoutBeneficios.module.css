@@ -1,0 +1,31 @@
+.container{
+    width: 100%;
+    height: 400px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: rgba(205, 205, 205, 0.6);
+}
+
+.child{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.child h1{
+    padding-top: 15px;
+}
+
+.icones{
+    width: 100%;
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card{
+    width: 300px;
+    height: 200px;
+    font-size: 15px;
+}
