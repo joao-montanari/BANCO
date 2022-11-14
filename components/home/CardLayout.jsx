@@ -1,4 +1,4 @@
-import Styles from '../../styles/GridLayout.module.css';
+import Styles from '../../styles/home/GridLayout.module.css';
 import Link from 'next/link';
 
 import Card from '../Card';

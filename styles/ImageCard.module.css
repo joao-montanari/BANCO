@@ -1,0 +1,11 @@
+.container{
+    width: 300px;
+    height: 300px;
+    display: grid;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.img{
+    margin: 0px auto;
+}

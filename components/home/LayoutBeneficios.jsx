@@ -1,4 +1,4 @@
-import Styles from '../../styles/LayoutBeneficios.module.css';
+import Styles from '../../styles/home/LayoutBeneficios.module.css';
 import Image from 'next/image';
 
 export default function LayoutBeneficios(){

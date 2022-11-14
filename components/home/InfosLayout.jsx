@@ -1,4 +1,4 @@
-import Styles from '../../styles/InfosLayout.module.css';
+import Styles from '../../styles/home/InfosLayout.module.css';
 
 import WideCard from '../WideCard';
 

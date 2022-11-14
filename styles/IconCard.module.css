@@ -3,6 +3,11 @@
     height: 200px;
     padding: 10px;
     background-color: #00BFA6;
+    transition: all 400ms ease;
+}
+
+.container:hover{
+    box-shadow: -10px 15px 30px #00BFA6;
 }
 
 .container h2{
@@ -12,6 +17,8 @@
 .icon{
     width: 75px;
     height: 75px;
+    display: flex;
     border-radius: 50%;
-    border: 1px solid #000;
+    align-items: center;
+    justify-content: space-around;
 }
