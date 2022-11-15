@@ -12,14 +12,17 @@ export default function LayoutCard(){
                 <ImageCard
                     image = '/img/adolescente.png'
                     titulo = 'Adolescentes'
+                    conteudo = 'Tenha uma conta fácil e rápida sem burocracias.'
                 />
                 <ImageCard
                     image = '/img/adulto.png'
                     titulo = 'Adultos'
+                    conteudo = 'Pague as suas contas com agilidade sem sair da casa.'
                 />
                 <ImageCard
                     image = '/img/idoso.png'
                     titulo = 'Idosos'
+                    conteudo = 'Aqui você encontra planos para poder render o seu dinheiro.'
                 />
             </div>
         </div>

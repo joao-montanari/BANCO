@@ -1,0 +1,20 @@
+.container{
+    width: 80%;
+    margin: 50px auto;
+    height: 600px;
+    display: flex;
+    border: 1px solid #000;
+}
+
+.imagem{
+    width: 40%;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.child{
+    width: 60%;
+    height: 100%;
+    border: 1px solid #000;
+    background-color: rgba(205, 205, 205, 0.6);
+}

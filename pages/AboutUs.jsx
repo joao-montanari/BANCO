@@ -1,8 +1,11 @@
+import Catalogo from '../components/AboutUs/Catalogo';
+import Kit from '../components/AboutUs/Kit';
 
 export default function AboutUs(){
     return(
         <>
-            <h1>Área sobre nós</h1>
+            <Catalogo/>
+            <Kit/>
         </>
     )
 }

@@ -10,7 +10,10 @@ export default function ImageCard(props){
                 width={300}
                 height={200}
             />
-            <h1>{props.titulo}</h1>
+            <h2>{props.titulo}</h2>
+            <p>
+                {props.conteudo}
+            </p>
         </div>
     )
 }

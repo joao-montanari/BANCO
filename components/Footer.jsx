@@ -1,5 +1,8 @@
 import styles from '../styles/Footer.module.css';
 
+import Image from 'next/image';
+import Link from 'next/link';
+
 export default function Rodape(){
     return(
         <div className={styles.container}>
@@ -29,16 +32,40 @@ export default function Rodape(){
                             </ul>
                             <div className={styles.icons}>
                                 <div className={styles.icon}>
-                                    <a href="" target="__blank" ><img src='{IconYoutube}' alt="Youtube" /></a>
+                                    <Link href='https://www.youtube.com'>
+                                        <Image
+                                            src='/img/icons/youtube.png'
+                                            width={70}
+                                            height={70}
+                                        />
+                                    </Link>
                                 </div>
                                 <div className={styles.icon}>
-                                    <a href=""><img src='{IconInstagram}' alt="Instagram" /></a>
+                                    <Link href='https://www.instagram.com'>
+                                        <Image
+                                            src='/img/icons/instagram.png'
+                                            width={70}
+                                            height={70}
+                                        />
+                                    </Link>
                                 </div>
                                 <div className={styles.icon}>
-                                    <a href=""><img src='{IconGithub}' alt="Github" /></a>
+                                    <Link href='https://www.github.com'>
+                                        <Image
+                                            src='/img/icons/github.png'
+                                            width={70}
+                                            height={70}
+                                        />
+                                    </Link>
                                 </div>
                                 <div className={styles.icon}>
-                                    <a href=""><img src='{IconLinkedin}' alt="Linkedin" /></a>
+                                    <Link href='https://www.linkedin.com'>
+                                        <Image
+                                            src='/img/icons/linkedin.png'
+                                            width={70}
+                                            height={70}
+                                        />
+                                    </Link>
                                 </div>
                             </div>
                         </div>

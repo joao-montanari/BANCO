@@ -3,7 +3,15 @@
     height: 300px;
     display: grid;
     text-align: center;
-    border: 1px solid #000;
+    border: 3px solid #006154;
+}
+
+.container h2{
+    margin: 0px auto;
+}
+
+.container p{
+    padding: 8px;
 }
 
 .img{

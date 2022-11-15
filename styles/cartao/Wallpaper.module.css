@@ -17,8 +17,8 @@
 }
 
 .faixa{
-    width: 5%;
+    width: 2%;
     height: 100%;
-    border: 1px solid #000;
+    background-color: #00BFA6;
 }
 
