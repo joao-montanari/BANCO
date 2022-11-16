@@ -1,20 +1,43 @@
 .container{
-    width: 80%;
-    margin: 50px auto;
+    width: 1200px;
     height: 600px;
     display: flex;
-    border: 1px solid #000;
+    margin: 50px auto;
+    border: 3px solid rgba(205, 205, 205, 0.6);
+    justify-content: space-around;
 }
 
 .imagem{
-    width: 40%;
+    width: 400px;
     height: 100%;
-    border: 1px solid #000;
 }
 
 .child{
-    width: 60%;
+    width: 800px;
     height: 100%;
-    border: 1px solid #000;
     background-color: rgba(205, 205, 205, 0.6);
+}
+
+.child p{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.text{
+    width: 450px;
+}
+
+.child h1{
+    font-size: 40px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.logos{
+    width: 60%;
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: space-around;
 }

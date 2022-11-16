@@ -5,7 +5,7 @@ import Styles from '../styles/Cabecalho.module.css';
 export default function Cabecalho(){
     return(
         <div className={Styles.container}>
-            <Image src='/img/logo.png' width={120} height={70}/>
+            <Image src='/img/logo.png' width={100} height={100}/>
             <ul>
                 <li> <Link href='/cartao'> <button>Cartão</button> </Link> </li>
                 <li> <Link href='/AboutUs'> <button>Sobre Nós</button> </Link> </li>

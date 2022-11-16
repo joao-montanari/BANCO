@@ -4,3 +4,19 @@
     display: flex;
     border-bottom: 10px solid #00BFA6;
 }
+
+.child{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+
+.content{
+    margin: auto;
+    width: 500px;
+}
+
+.img{
+    margin: auto;
+}

@@ -1,0 +1,33 @@
+.container{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    margin: 50px auto;
+    border-radius: 15px;
+    background: linear-gradient(#51fc93, #00e239);
+}
+
+.child{
+    width: 70%;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.content{
+    width: 200px;
+    display: flex;
+    margin-top: 180px;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.chip{
+    width: 80px;
+    height: 55px;
+    border-radius: 5px;
+    background: linear-gradient(#c5c5c5, #a3a3a3);
+}
+
+.img{
+    margin: 0px 30px;
+}
