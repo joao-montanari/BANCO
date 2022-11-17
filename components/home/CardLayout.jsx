@@ -21,7 +21,7 @@ export default function CardLayout(){
                     texto = 'Teste de texto para poder preencher os card da home do banco, vangens de ter o banco do montanari'
                 />
             </div>
-            <Link href='/'><button>Quero minha conta</button></Link>
+            <Link href='/Cadastro'><button>Quero minha conta</button></Link>
         </div>
     )
 }

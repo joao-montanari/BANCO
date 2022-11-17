@@ -3,8 +3,7 @@ import AreaCards from "../components/cartao/AreaCards";
 import Tabela from "../components/cartao/Tabela";
 import LayoutCard from '../components/cartao/LayoutCard';
 import Recorte from "../components/cartao/Recorte";
-import CartaoFrente from "../components/CartaoFrente";
-import CartaoVerso from "../components/CartaoVerso";
+import LayoutCartao from "../components/cartao/LayoutCartao";
 
 export default function Cartao(){
     return(
@@ -14,8 +13,7 @@ export default function Cartao(){
             <AreaCards/>
             <Tabela/>
             <LayoutCard/>
-            <CartaoFrente/>
-            <CartaoVerso/>
+            <LayoutCartao/>
         </>
     )
 }

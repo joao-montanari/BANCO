@@ -1,0 +1,14 @@
+.container{
+    width: 80%;
+    display: grid;
+    height: 1100px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(205, 205, 205, 0.6);
+}
+
+.titulo{
+    color: #008371;
+    margin: 20px 150px;
+}

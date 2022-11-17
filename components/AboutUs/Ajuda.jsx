@@ -27,8 +27,8 @@ export default function Ajuda(){
                 <h3>O BooBank é de algum banco?</h3>
                 <p>
                     Não. O Boo é uma somativa. Unimos toda a comodidade de um Banco 100% digital 
-                    com a solidez e segurança da Organização Educacional. Estamos sempre evoluindo 
-                    para proporcionar uma experiência cada vez melhor aos nossos clientes.
+                    com solidez e segurança. Estamos sempre evoluindo para proporcionar uma experiência 
+                    cada vez melhor aos nossos clientes.
                 </p>
 
                 <hr />

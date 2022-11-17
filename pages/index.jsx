@@ -9,11 +9,11 @@ import LayoutBeneficios from '../components/home/LayoutBeneficios';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Wallpaper/>
       <CardLayout/>
       <InfosLayout/>
       <LayoutBeneficios/>
-    </div>
+    </>
   )
 }

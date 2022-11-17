@@ -2,7 +2,7 @@
     width: 800px;
     height: 400px;
     display: flex;
-    margin: 50px auto;
+    margin: 30px auto;
     border-radius: 15px;
     background: linear-gradient(#008371, #00BFA6);
 }
