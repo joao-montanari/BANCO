@@ -7,20 +7,20 @@
     text-align: center;
     border-radius: 5px;
     backdrop-filter: blur(8px);
-    box-shadow: -10px 15px 30px #42FF8A;
+    box-shadow: -10px 15px 30px #00BFA6;
     transition: all 400ms ease;
 }
 
 .container h1{
     font-size: 30px;
-    color: #00ff40;
+    color: #00BFA6;
 }
 
 .container:hover{
     padding: 20px;
     box-shadow: none;
     border-radius: 0px;
-    border: 1px solid #42FF8A;
+    border: 3px solid #00BFA6;
 }
 
 .container p{

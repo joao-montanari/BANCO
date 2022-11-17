@@ -1,0 +1,22 @@
+.container{
+    width: 80%;
+    height: 700px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.child{
+    width: 90%;
+    text-align: left;
+    margin: 30px auto;
+}
+
+.child h3{
+    margin: 20px 0px;
+}
+
+.child p{
+    font-size: 12px;
+    margin: 15px 15px;
+    text-align: justify;
+}

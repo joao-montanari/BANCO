@@ -23,7 +23,7 @@ export default function CartaoDeCredito(){
                         <Image
                             src='/img/simbolo.png'
                             width={150}
-                            height={75}
+                            height={70}
                         />
                         <p>
                             João Vitor M. Silva
@@ -50,7 +50,7 @@ export default function CartaoDeCredito(){
                         <Image
                             src='/img/silver.png'
                             width={150}
-                            height={150}
+                            height={75}
                         />
                     </div>
                     <div className={Styles.box}>
@@ -71,6 +71,23 @@ export default function CartaoDeCredito(){
                         <p>
                             Outside Brazil | 1 636 722 7111
                         </p>
+                    </div>
+                </div>
+                <div className={Styles.footer}>
+                    <h1>5032 9334 3764 9846</h1>
+                    <div className={Styles.infos}>
+                        <div className={Styles.info}>
+                            <p>Validade:</p>
+                            <h2>02/20</h2>
+                        </div>
+                        <div className={Styles.emissaoData}>
+                            <p>Emissão:</p>
+                            <h2>02/17</h2>
+                        </div>
+                        <div className={Styles.cvv}>
+                            <p>CVV:</p>
+                            <h2>123</h2>
+                        </div>
                     </div>
                 </div>
             </div>

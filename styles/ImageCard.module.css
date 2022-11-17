@@ -3,7 +3,8 @@
     height: 300px;
     display: grid;
     text-align: center;
-    border: 3px solid #006154;
+    background-color: #00BFA6;
+    box-shadow: 0px 7px 15px #000;
 }
 
 .container h2{
