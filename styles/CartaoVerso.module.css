@@ -1,0 +1,111 @@
+.verso{
+    width: 800px;
+    height: 400px;
+    color: #fff;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 15px;
+    background: linear-gradient(#00BFA6, #008371);
+}
+
+.emissao{
+    padding: 1.4%;
+}
+
+.faixa{
+    width: 100%;
+    height: 25%;
+    background-color: #000;
+}
+
+.caixote{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid #000;
+}
+
+.part{
+    width: 300px;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.box{
+    width: 250px;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.box p{
+    padding: 4px;
+    margin: 0px 6px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.footer{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    border: 1px solid #000;
+    align-items: center;
+}
+
+.footer h1{
+    margin-left: 25px;
+    text-align: left;
+}
+
+.infos{
+    width: 400px;
+    display: flex;
+    margin-left: 20px;
+    justify-content: space-around;
+}
+
+.info{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info p{
+    font-size: 13px;
+}
+
+.info h2{
+    font-size: medium;
+}
+
+.cvv{
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cvv p{
+    font-size: 13px;
+}
+
+.cvv h2{
+    font-size: medium;
+}
+
+.emissaoData{
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.emissaoData p{
+    font-size: 13px;
+}
+
+.emissaoData h2{
+    font-size: medium;
+}

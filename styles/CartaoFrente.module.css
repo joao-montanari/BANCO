@@ -1,0 +1,85 @@
+.container{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    margin: 50px auto;
+    border-radius: 15px;
+    background: linear-gradient(#008371, #00BFA6);
+}
+
+.child{
+    width: 70%;
+    height: 100%;
+}
+
+.content{
+    width: 35%;
+    height: 13%;
+    display: flex;
+    margin-top: 25%;
+    margin-left: 18%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.chip{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    border-radius: 8%;
+    background: linear-gradient(#c5c5c5, #a3a3a3);
+}
+
+.img{
+    width: 28%;
+    height: 100%;
+}
+
+.linha01{
+    width: 70%;
+    height: 30%;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-radius: 0px 0px 15px 0px;
+}
+
+.linha02{
+    width: 20%;
+    height: 70%;
+    margin-top: 19%;
+    margin-left: 10%;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-radius: 15px 0px 0px 0px;
+}
+
+.marcaNome{
+    width:  80%;
+    display: flex;
+    color: #fff;
+    margin-top: 12%;
+    margin-left: 18%;
+    align-items: center;
+}
+
+.marcaNome p{
+    font-size: 30px;
+    margin-left: 6%;
+}
+
+.marca{
+    width: 33%;
+    height: 100%;
+}
+
+.lateral{
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+
+.visa{
+    width: 50%;
+    height: 12%;
+    margin: 30% auto;
+}
