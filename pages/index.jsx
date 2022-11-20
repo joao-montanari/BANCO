@@ -6,6 +6,7 @@ import Wallpaper from '../components/home/Wallpaper';
 import CardLayout from '../components/home/CardLayout';
 import InfosLayout from '../components/home/InfosLayout';
 import LayoutBeneficios from '../components/home/LayoutBeneficios';
+import FormularioDuvidas from '../components/home/FormularioDuvidas';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <CardLayout/>
       <InfosLayout/>
       <LayoutBeneficios/>
+      <FormularioDuvidas/>
     </>
   )
 }
