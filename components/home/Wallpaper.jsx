@@ -5,7 +5,7 @@ export default function Wallpaper(){
         <>
             <div className={Styles.container}>
                 <div className={Styles.card}>
-                    <h1>Conte a sua história e impulsione seus sonhos com a conta BooBanck.</h1>
+                    <h1>Conte a sua história e impulsione seus sonhos com a conta BooBank.</h1>
                 </div>
             </div>
         </>
