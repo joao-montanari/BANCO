@@ -1,6 +1,6 @@
 .container{
     width: 100%;
-    height: 400px;
+    height: 500px;
     display: flex;
     position: relative;
     background-color: #00BFA6;
@@ -26,4 +26,25 @@
     position: absolute;
     clip-path: circle(30% at 0 10%);
     background: linear-gradient(#00ff40,#42FF8A);;
+}
+
+.card{
+    z-index: 1;
+    width: 800px;
+    height: 250px;
+    display: grid;
+    padding: 15px;
+    margin-top: 80px;
+    margin-left: 100px;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+.card h1{
+    color: #fff;
+    font-size: 50px;
 }

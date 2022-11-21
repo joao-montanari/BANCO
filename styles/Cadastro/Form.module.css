@@ -9,9 +9,9 @@
 }
 
 .container h1{
+    margin: auto;
     color: #fff;
     font-size: 50px;
-    margin: auto;
 }
 
 .content{
@@ -65,6 +65,6 @@
 }
 
 .container a:hover{
-    cursor: pointer;
     color: #000;
+    cursor: pointer;
 }
