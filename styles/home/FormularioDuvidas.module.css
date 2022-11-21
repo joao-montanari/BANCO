@@ -1,10 +1,13 @@
 .container{
     width: 600px;
+    padding: 10px;
     height: 600px;
     display: grid;
+    color: #fff;
     margin: 50px auto;
     text-align: center;
-    border: 3px solid #000;
+    background-color: #00BFA6;
+    box-shadow: -10px 15px 30px #00BFA6;
 }
 
 .container h1{
@@ -16,6 +19,8 @@
     height: 30px;
     margin: auto;
     padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
 }
 
 .container textarea{
@@ -23,10 +28,23 @@
     margin: auto;
     padding: 5px;
     height: 150px;
+    border-radius: 5px;
+    border: 1px solid #000;
 }
 
 .container button{
     width: 300px;
     height: 40px;
     margin: auto;
+    color: #fff;
+    cursor: pointer;
+    font-size: large;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background-color: #00BFA6;
+    transition: all 400ms ease;
+}
+
+.container button:hover{
+    font-size: 23px;
 }
