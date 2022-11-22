@@ -13,7 +13,7 @@ export default function Form(){
                 <input className={Styles.inputDown} type="email" placeholder='Repetir E-mail'/>
             </div>
             <button type='submit'>CONTINUAR</button>
-            <a>JÁ SOU CLIENTE</a>
+            <Link href='/Login'> <a>JÁ SOU CLIENTE</a> </Link>
         </form>
     )
 }
