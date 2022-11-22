@@ -1,8 +1,7 @@
 import '../styles/globals.css';
 import Layout from '../components/Layout';
 
-import { AuthContext } from '../context/AuthContext';
-import { SessionProvider } from 'next-auth/react';
+import { AuthContext } from './context/AuthContext';
 
 function MyApp({ Component, pageProps }) {
   return(

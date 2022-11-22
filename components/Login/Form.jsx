@@ -1,14 +1,17 @@
 import Styles from '../../styles/Login/Form.module.css';
 
-import { SingIn } from 'next-auth/react';
+// import { SingIn } from 'next-auth/react';
 
 import { useForm } from 'react-hook-form';
+import { useContext } from 'react';
+import { AuthContext } from '../../pages/context/AuthContext';
 
 export default function Form(){
     const { register, handleSubmit } = useForm();
+    const { singIn } = useContext(AuthContext);
 
-    function handleSingIn(data){
-        console.log(data)
+    async function handleSingIn(data){
+        await singIn(data);
     }
 
     return(

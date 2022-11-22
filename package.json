@@ -21,6 +21,8 @@
   },
   "devDependencies": {
     "@types/cookie": "^0.5.1",
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
     "@types/uuid": "^8.3.4"
   }
 }

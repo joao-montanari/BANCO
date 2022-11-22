@@ -11,6 +11,9 @@ import FormularioDuvidas from '../components/home/FormularioDuvidas';
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>BooBank | Home</title>
+      </Head>
       <Wallpaper/>
       <CardLayout/>
       <InfosLayout/>

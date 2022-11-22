@@ -6,7 +6,7 @@ export default function Login(){
     return(
         <>
             <Head>
-                <title>Login</title>
+                <title>BooBank | Login</title>
             </Head>
             
             <LayoutForm/>
