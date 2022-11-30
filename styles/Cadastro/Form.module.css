@@ -1,7 +1,7 @@
 .container{
     margin: auto;
     width: 800px;
-    height: 450px;
+    height: auto;
     display: grid;
     text-align: center;
     border-radius: 5px;
@@ -16,7 +16,7 @@
 
 .content{
     width: 80%;
-    margin: auto;
+    margin: 50px auto;
 }
 
 .container input{
@@ -67,4 +67,12 @@
 .container a:hover{
     color: #000;
     cursor: pointer;
+}
+
+.escolha{
+    width: 70%;
+    margin: 5px auto;
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
 }

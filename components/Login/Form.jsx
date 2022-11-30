@@ -1,37 +1,48 @@
 import Styles from '../../styles/Login/Form.module.css';
-
-// import { SingIn } from 'next-auth/react';
+import { AuthenticationContext } from '../../pages/context/AuthenticationContext';
 
 import { useForm } from 'react-hook-form';
-import { useContext } from 'react';
-import { AuthContext } from '../../pages/context/AuthContext';
+import { useContext, useState } from 'react';
 
 export default function Form(){
-    const { register, handleSubmit } = useForm();
-    const { singIn } = useContext(AuthContext);
+    const [user, setUser] = useState('');
+    const [senha, setSenha] = useState('');
 
-    async function handleSingIn(data){
-        await singIn(data);
+    const { login } = useContext(AuthenticationContext);
+
+    function Logar(e){
+        e.preventDefault()
+
+        if( user !== "" && senha !== ""){
+            let body = {
+                "user" : user,
+                "senha" : senha
+            }
+            login({ user, senha })
+        } else{
+            alert('Um ou mais campos não foram preenchidos')
+        }
     }
 
     return(
-        <form className={Styles.container} onSubmit={handleSubmit(handleSingIn)}>
+        <form className={Styles.container} onSubmit={Logar}>
             <h1>Login</h1>
             <div className={Styles.content}>
                 <input
-                    {...register('cpf')}
                     className={Styles.inputUpper}
-                    type="number"
-                    placeholder='CPF'
-                    name='cpf'
+                    type="text"
+                    value = {user}
+                    placeholder='Usuario'
+                    name='user'
+                    onChange={(e) => setUser(e.target.value)}
                 />
                 <input
-                    {...register('password')}
                     className={Styles.inputDown}
                     type="password"
+                    value = {senha}
                     placeholder='Senha'
-                    autoComplete='current-password'
                     name='password'
+                    onChange={(e) => setSenha(e.target.value)}
                 />
             </div>
             <button type='submit'>CONTINUAR</button>
