@@ -1,4 +1,5 @@
 import Styles from '../../styles/Cadastro/Form.module.css';
+import Notiflix from 'notiflix';
 
 import Link from 'next/link';
 import { useState } from 'react';
@@ -44,11 +45,11 @@ export default function Form(){
                 console.log('Corpo do Usuario: ')
                 console.log(bodyUsuario)
             } else{
-                alert('Um ou mais campos não foram preenchidos')
+                Notiflix.Notify.failure('Um ou mais campos não foram preenchidos')
             }
 
         } else{
-            alert('As senhas não estão condizentes')
+            Notiflix.Notify.failure('As senhas não condizem')
         }
     }
 

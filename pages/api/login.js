@@ -6,13 +6,12 @@ export default async (req, res) => {
 
   if(req.method === 'POST') {
     const {user, senha} = req.body
-    const jwt = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY5ODIwMDU0LCJqdGkiOiI4YjY4ZTVhNDYxODk0MjY0OTYwYjk4M2I5ZGRhNjllMyIsInVzZXJfaWQiOjR9.lCKmTVP9f0G2Oj-wXa1VwzNJjtIYpvrec9OIy6LB0HY"
+    
 
     const config = {
       headers : {
         'Accept' : 'application/json',
         'Content-Type' : 'application/json',
-        //'Authorization': `JWT ${jwt}`
       }
     }
 
@@ -21,9 +20,21 @@ export default async (req, res) => {
       password : senha
     }
 
-    const { data } = await axios.post('http://localhost:8000/auth/jwt/create', body, config)
-    console.log(data)
-    res.status(200).json(data)
+    const { data:accessResponse } = await axios.post('http://localhost:8000/auth/jwt/create', body, config)
+    accessToken = accessResponse.access
+    console.log(accessToken)
+
+    const userConfig = {
+      headers : {
+        'Authorization' : 'JWT ' + accessToken
+      }
+    }
+
+    const { data:userData } = await axios.get('http://localhost:8000/home/cliente/', userConfig)
+    console.log(userData)
+
+    res.status(200).json({user: userData, access: accessToken})
+
   } else {
     res.setHeader('Allow', ['POST'])
     res.status(405).json({message: `Method ${req.method} is not allowed`})

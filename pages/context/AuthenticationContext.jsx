@@ -26,8 +26,9 @@ export const AuthenticationProvider = ({ children }) => {
         }
 
         const { data } = await axios.post('http://localhost:3000/api/login', body, config)
-        console.log(data)
-        return { data }
+        var token = `JWT ${data.access}`
+        setAccessToken(token)
+        console.log(accessToken)
     }
 
     return (
