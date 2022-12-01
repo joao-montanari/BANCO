@@ -1,6 +1,7 @@
 import { createContext, useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/router';
+import Notiflix from 'notiflix';
 
 export const AuthenticationContext = createContext('');
 
@@ -91,6 +92,9 @@ export const AuthenticationProvider = ({ children }) => {
             setError('Algo deu de errado')
             return
         }
+
+        router.push('/')
+        Notiflix.Notify.success('Usuario cadastrado com sucesso!')
     }
 
     return (
