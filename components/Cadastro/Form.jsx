@@ -32,9 +32,13 @@ export default function Form(){
                 let body = {
                     "email" : email,
                     "senha" : senha,
-                    "username" : nome
+                    "username" : nome,
+                    "data_nascimento" : nascimento,
+                    "empregado" : empregado,
+                    "sexo" : sexo,
                 }
-                register({ email, nome, senha })
+
+                register(body)
             } else{
                 Notiflix.Notify.failure('Um ou mais campos não foram preenchidos')
             }
@@ -48,7 +52,7 @@ export default function Form(){
         <form className={Styles.container} onSubmit={Cadastro}>
             <h1>Cadastro</h1>
             <div className={Styles.escolha}>
-                    <h2>Gênero:</h2>
+                <h2>Gênero:</h2>
             </div>
             <div className={Styles.escolha}>
                 <input
@@ -80,7 +84,7 @@ export default function Form(){
                     className={Styles.inputUpper}
                     type="text"
                     value = {nome}
-                    placeholder='Nome completo'
+                    placeholder='Username'
                     onChange={(e) => setNome(e.target.value)}
                 />
                 <input

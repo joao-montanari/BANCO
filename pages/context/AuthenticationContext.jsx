@@ -53,7 +53,7 @@ export const AuthenticationProvider = ({ children }) => {
         }
     }
 
-    const register = async({ email, username, senha }) => {
+    const register = async({ email, username, senha, data_nascimento, empregado, sexo }) => {
         const config = {
             headers: {
                 'Accept' : 'application/json',
@@ -62,14 +62,21 @@ export const AuthenticationProvider = ({ children }) => {
         }
 
         const body = {
-            username,
-            senha
+            "email" : email,
+            "username" : username,
+            "password" : senha,
+            "data_nascimento" : data_nascimento,
+            "empregado" : empregado,
+            "sexo" : sexo,
         }
+        
+        console.log('CORPO DO CADASTRO')
+        console.log(body)
 
         try {
-            await axios.post('http://localhost:8000/auth/users/', body, config)
+            await axios.post('http://localhost:3000/api/register', body, config)
             // login({username, senha})
-        } catch {
+        } catch(error) {
             if (error.response && error.response.data) {
                 setError(error.response.data.messege)
                 return

@@ -7,7 +7,7 @@ export default function UserInfos(props){
         <div className={Styles.container}>
             <div className={Styles.child}>
                 <div className={Styles.photo}>
-                <Image src={props.foto} width={100} height={100}/>
+                    {/* <Image src={props.foto} width={100} height={100}/> */}
                 </div>
                 <div className={Styles.content}>
                         <h1>{props.nome}</h1>

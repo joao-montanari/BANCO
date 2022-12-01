@@ -16,9 +16,9 @@ export default function Deshboard(){
             {
                 user ? (
                     <UserInfos
-                        nome = {user[0].nome_completo}
-                        nascimento = {user[0].data_nacimento}
-                        foto = {user[0].foto}
+                        nome = {user.nome_completo}
+                        nascimento = {user.data_nacimento}
+                        foto = {user.foto}
                     />
                 ) : (
                     <h1>É necessário realizar cadastro para poder carregar a página</h1>
