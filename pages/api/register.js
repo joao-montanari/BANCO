@@ -1,11 +1,10 @@
 import axios from 'axios';
-import cookie from 'cookie';
 
 export default async (req, res) => {
   let accessToken = null;
 
   if(req.method === 'POST') {
-    const {user, senha} = req.body
+    const {email, username, senha} = req.body
     
 
     const config = {
@@ -16,26 +15,12 @@ export default async (req, res) => {
     }
 
     const body = {
-      username : user,
+      username : username,
       password : senha
     }
 
     try {
-      const { data:accessResponse } = await axios.post('http://localhost:8000/auth/jwt/create', body, config)
-      accessToken = accessResponse.access
-      res.setHeader(
-        'Set-Cookie',
-        cookie.serialize(
-          'Refresh',
-          accessResponse.refresh,
-          {
-            httpOnly: true,
-            secure: false,
-            sameSite: 'strict',
-            maxAge: 60 * 60 * 1, path: '/'
-          }
-          )
-      )
+      await axios.post('http://localhost:8000/auth/users', body, config)
     } catch (error) {
       if (error.reponse) {
         console.error(error.response.data);
@@ -51,18 +36,7 @@ export default async (req, res) => {
       return res.status(500).json({message : 'Algo deu errado'})
     }
 
-    console.log(accessToken)
-
-    const userConfig = {
-      headers : {
-        'Authorization' : 'JWT ' + accessToken
-      }
-    }
-
-    const { data:userData } = await axios.get('http://localhost:8000/home/cliente/', userConfig)
-    console.log(userData)
-
-    res.status(200).json({user: userData, access: accessToken})
+    res.status(200).json({message : 'Usuario foi criado'})
 
   } else {
     res.setHeader('Allow', ['POST'])

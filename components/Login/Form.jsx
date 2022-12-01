@@ -1,7 +1,7 @@
 import Styles from '../../styles/Login/Form.module.css';
 import { AuthenticationContext } from '../../pages/context/AuthenticationContext';
+import Notiflix from 'notiflix';
 
-import { useForm } from 'react-hook-form';
 import { useContext, useState } from 'react';
 
 export default function Form(){
@@ -20,7 +20,7 @@ export default function Form(){
             }
             login({ user, senha })
         } else{
-            alert('Um ou mais campos não foram preenchidos')
+            Notiflix.Notify.failure('Um ou mais campos não foram preenchidos')
         }
     }
 

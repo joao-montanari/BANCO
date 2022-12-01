@@ -2,17 +2,20 @@ import Styles from '../../styles/Cadastro/Form.module.css';
 import Notiflix from 'notiflix';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { AuthenticationContext } from '../../pages/context/AuthenticationContext';
 
 export default function Form(){
     const [nome, setNome] = useState('');
     const [nascimento, setNascimento] = useState('');
-    const [cpf, setCpf] = useState('');
+    const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [confsenha, setConfsenha] = useState('');
     const [estado, setEstado] = useState(true);
     const [empregado, setEmpregado] = useState('');
     const [sexo, setSexo] = useState('');
+
+    const {register} = useContext(AuthenticationContext)
 
     function Cadastro(e){
         e.preventDefault()
@@ -21,29 +24,17 @@ export default function Form(){
             if (
                 senha !== "" &&
                 nome !== "" &&
-                cpf !== "" &&
+                email !== "" &&
                 empregado !== "" &&
                 sexo !== "" &&
                 nascimento != "" 
             ){
-                let bodyCliente = {
-                    "nome_completo" : nome,
-                    "data_nascimento" : nascimento,
-                    "empregado" : empregado,
-                    "sexo" : sexo,
-                    "foto" : ''
-                }
-        
-                let bodyUsuario = {
-                    "cpf" : cpf,
+                let body = {
+                    "email" : email,
                     "senha" : senha,
-                    "estado" : estado
+                    "username" : nome
                 }
-        
-                console.log('Corpo do cliente: ')
-                console.log(bodyCliente)
-                console.log('Corpo do Usuario: ')
-                console.log(bodyUsuario)
+                register({ email, nome, senha })
             } else{
                 Notiflix.Notify.failure('Um ou mais campos não foram preenchidos')
             }
@@ -99,10 +90,10 @@ export default function Form(){
                     onChange={(e) => setNascimento(e.target.value)}
                 />
                 <input 
-                    type="number" 
-                    value = {cpf}
-                    placeholder='CPF'
-                    onChange={(e) => setCpf(e.target.value)}
+                    type="email" 
+                    value = {email}
+                    placeholder='email'
+                    onChange={(e) => setEmail(e.target.value)}
                 />
                 <input 
                     type="password" 
