@@ -30,12 +30,7 @@ export default async (req, res) => {
         cookie.serialize(
           'Refresh',
           accessResponse.refresh,
-          {
-            httpOnly: true,
-            secure: false,
-            sameSite: 'strict',
-            maxAge: 60 * 60 * 1, path: '/'
-          }
+          { httpOnly: true, secure: false, sameSite: 'strict', maxAge: 60 * 60 * 1, path: '/' }
           )
       )
     } catch (error) {

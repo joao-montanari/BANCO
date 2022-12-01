@@ -1,0 +1,16 @@
+.container{
+    width: 100%;
+    display: grid;
+    height: 800px;
+    text-align: center;
+    align-items: center;
+}
+
+.container h1{
+    margin: auto;
+    font-size: 50px;
+}
+
+.logo{
+    border-radius: 10px;
+}

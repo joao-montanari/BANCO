@@ -77,7 +77,6 @@ export const AuthenticationProvider = ({ children }) => {
 
         try {
             await axios.post('http://localhost:3000/api/register', body, config)
-            // login({username, senha})
         } catch(error) {
             if (error.response && error.response.data) {
                 setError(error.response.data.messege)
