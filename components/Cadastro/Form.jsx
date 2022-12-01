@@ -3,7 +3,7 @@ import Notiflix from 'notiflix';
 
 import Link from 'next/link';
 import { useContext, useState } from 'react';
-import { AuthenticationContext } from '../../pages/context/AuthenticationContext';
+import { AuthenticationContext } from '../../context/AuthenticationContext';
 
 export default function Form(){
     const [nome, setNome] = useState('');

@@ -3,7 +3,7 @@ import { useContext, useEffect, useState } from 'react';
 import UserInfos from "../components/Dashboard/UserInfos";
 import Unload from '../components/Dashboard/Unload';
 
-import { AuthenticationContext } from './context/AuthenticationContext';
+import { AuthenticationContext } from '../context/AuthenticationContext';
 
 export default function Deshboard(){
     const { user } = useContext(AuthenticationContext);

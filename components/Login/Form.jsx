@@ -1,5 +1,5 @@
 import Styles from '../../styles/Login/Form.module.css';
-import { AuthenticationContext } from '../../pages/context/AuthenticationContext';
+import { AuthenticationContext } from '../../context/AuthenticationContext';
 import Notiflix from 'notiflix';
 
 import { useContext, useState } from 'react';
