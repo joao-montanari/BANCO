@@ -31,6 +31,7 @@ export default function InfosLayout(){
                         src='/img/notebookBooBank.png'
                         width={560}
                         height={500}
+                        alt='notebook boobank'
                     />
                 </div>
             </div>

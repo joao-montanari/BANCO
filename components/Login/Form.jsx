@@ -30,9 +30,9 @@ export default function Form(){
             <div className={Styles.content}>
                 <input
                     className={Styles.inputUpper}
-                    type="text"
+                    type="number"
                     value = {user}
-                    placeholder='Usuario'
+                    placeholder='CPF'
                     name='user'
                     onChange={(e) => setUser(e.target.value)}
                 />

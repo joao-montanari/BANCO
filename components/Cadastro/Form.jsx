@@ -7,6 +7,7 @@ import { AuthenticationContext } from '../../pages/context/AuthenticationContext
 
 export default function Form(){
     const [nome, setNome] = useState('');
+    const [cpf, setCpf] = useState('');
     const [nascimento, setNascimento] = useState('');
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
@@ -32,7 +33,8 @@ export default function Form(){
                 let body = {
                     "email" : email,
                     "senha" : senha,
-                    "username" : nome,
+                    "username" : cpf,
+                    "nome_completo" : nome,
                     "data_nascimento" : nascimento,
                     "empregado" : empregado,
                     "sexo" : sexo,
@@ -82,9 +84,15 @@ export default function Form(){
             <div className={Styles.content}>
                 <input
                     className={Styles.inputUpper}
+                    type="number"
+                    value = {cpf}
+                    placeholder='CPF'
+                    onChange={(e) => setCpf(e.target.value)}
+                />
+                <input
                     type="text"
                     value = {nome}
-                    placeholder='Username'
+                    placeholder='Nome completo'
                     onChange={(e) => setNome(e.target.value)}
                 />
                 <input

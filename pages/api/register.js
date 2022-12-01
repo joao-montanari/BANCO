@@ -4,7 +4,7 @@ export default async (req, res) => {
   let accessToken = null;
 
   if(req.method === 'POST') {
-    const { email, username, password, data_nascimento, empregado, sexo } = req.body
+    const { email, username, password, nome_completo, data_nascimento, empregado, sexo } = req.body
 
     try {
       const config = {
@@ -40,7 +40,7 @@ export default async (req, res) => {
       const { data } = await axios.get('http://localhost:8000/auth/users/me/', userConfig)
   
       const bodyCliente = {
-        "nome_completo" : username,
+        "nome_completo" : nome_completo,
         "data_nacimento": data_nascimento,
         "empregado": empregado,
         "sexo": sexo,

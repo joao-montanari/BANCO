@@ -37,7 +37,7 @@ export const AuthenticationProvider = ({ children }) => {
 
             router.push('/Deshboard')
 
-        } catch {
+        } catch(error) {
             if (error.response && error.response.data) {
                 setError(error.response.data.messege)
                 return
@@ -54,7 +54,7 @@ export const AuthenticationProvider = ({ children }) => {
         }
     }
 
-    const register = async({ email, username, senha, data_nascimento, empregado, sexo }) => {
+    const register = async({ email, username, senha, nome_completo, data_nascimento, empregado, sexo }) => {
         const config = {
             headers: {
                 'Accept' : 'application/json',
@@ -66,6 +66,7 @@ export const AuthenticationProvider = ({ children }) => {
             "email" : email,
             "username" : username,
             "password" : senha,
+            "nome_completo" : nome_completo,
             "data_nascimento" : data_nascimento,
             "empregado" : empregado,
             "sexo" : sexo,

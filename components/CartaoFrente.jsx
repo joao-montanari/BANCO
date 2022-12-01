@@ -16,6 +16,7 @@ export default function CartaoFrente(){
                         src='/img/icons/sinal.png'
                         width={60}
                         height={60}
+                        alt='icone sinal'
                     />
                 </div>
                 <div className={Styles.marcaNome}>
@@ -24,6 +25,7 @@ export default function CartaoFrente(){
                         src='/img/simbolo.png'
                         width={150}
                         height={70}
+                        alt = 'simbolo boobank'
                     />
                     <p>
                         João Vitor M. Silva
@@ -36,6 +38,7 @@ export default function CartaoFrente(){
                     src='/img/visa.png'
                     width={120}
                     height={45}
+                    alt = 'visa'
                 />
             </div>
         </div>

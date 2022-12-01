@@ -37,6 +37,7 @@ export default function Rodape(){
                                             src='/img/icons/youtube.png'
                                             width={70}
                                             height={70}
+                                            alt='icone youtube'
                                         />
                                     </Link>
                                 </div>
@@ -46,6 +47,7 @@ export default function Rodape(){
                                             src='/img/icons/instagram.png'
                                             width={70}
                                             height={70}
+                                            alt='icone instagram'
                                         />
                                     </Link>
                                 </div>
@@ -55,6 +57,7 @@ export default function Rodape(){
                                             src='/img/icons/github.png'
                                             width={70}
                                             height={70}
+                                            alt='icone github'
                                         />
                                     </Link>
                                 </div>
@@ -64,6 +67,7 @@ export default function Rodape(){
                                             src='/img/icons/linkedin.png'
                                             width={70}
                                             height={70}
+                                            alt='icone linkedin'
                                         />
                                     </Link>
                                 </div>
