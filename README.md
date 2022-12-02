@@ -1,26 +1,27 @@
+Projeto realizado por: `João Vitor Montanari da Silva`
+
+Turma: `Desenvolvimento de Sistemas - Bosch (Manhã)`
+
 ## Projeto Integrador
 
-First, run the development server:
+O projeto se trata da construção de um banco funcional utilizando de frameworks e ferramentas em JavaScript e Python. A intenção é de desenvolver tanto a parte de BACK-END quando a de FRONT-END, assim podendo abordar todos os aspectos de uma aplicação Web. O banco vem com a intenção de executar as funções mais genêricas de um banco real, tais como:
+- Transferência;
+- Login;
+- Cadastro;
+- Gerar conta;
+- Gerar Cartão;
+- etc...
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para o desenvolvimento do projeto foi necessário integrar diferentes conhecimentos, referentes a materias de back-end, front-end e banco de dados. Juntas elas se encontram afim de criar este projeto integrador.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Ferramentas
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+No projeto foi usado o framework do JavaScript baseado em React, `Next JS`. O mesmo se trata de uma ferramenta muito utilizada atualmente no mercado e apresenta soluções eficazes com bibliotecas e facilidades que são validas para a construção de um projeto completo que aborda aspectos do gerais.
+Já para poder desenvolver a parte de back-end com as lógicas de API foi utilizado o `DJango`, framework em Python que apresenta um alto nível de abstração, assim podendo desenvolver uma API completa de forma agil e eficiente.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Links
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Alguns Links relacionados ao projeto:
+- [Hospedagem na Vercel](https://boobank.vercel.app/)
+- [Hospedagem da API](https://google.com)
+- [Repositório da API](https://github.com/joao-montanari/back-end)
