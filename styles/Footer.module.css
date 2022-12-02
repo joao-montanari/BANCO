@@ -39,6 +39,7 @@
 }
 
 .apps{
+    border: 3px solid #fff;
     width: 400px;
     height: 60px;
     padding: 5px;
@@ -46,7 +47,6 @@
     font-size: larger;
     text-align: center;
     border-radius: 10px;
-    border: 3px solid #fff;
 }
 
 .icons{
@@ -74,21 +74,4 @@
 
 .text{
     padding: 10px;
-}
-
-@media only screen and (max-device-width: 500px){
-    .child{
-        height: auto;
-    }
-    .icon img{
-        width: 45px;
-        height: 45px;
-    }
-    .apps{
-        width: 190px;
-    }
-    .global{
-        width: 90%;
-        height: 100%;
-    }
 }

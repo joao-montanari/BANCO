@@ -48,11 +48,3 @@
     color: #fff;
     font-size: 50px;
 }
-
-@media only screen and (max-device-width: 500px){
-    .card{
-        width: 90%;
-        margin: auto;
-        height: auto;
-    }
-}

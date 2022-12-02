@@ -11,7 +11,6 @@ export default function Recorte(){
                     src='/img/pessoas.png'
                     width={700}
                     height={400}
-                    alt='imagem pessoas'
                 />
             </div>
             <div className={Styles.child}>

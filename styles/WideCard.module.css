@@ -4,7 +4,6 @@
     height: 100px;
     display: flex;
     border-radius: 5px;
-    align-items: center;
     border: 3px solid #000;
     transition: all 400ms ease;
 }
@@ -16,7 +15,8 @@
 .icone{
     width: 100px;
     height: 100%;
-    display: grid;
+    display: flex;
+    align-items: center;
 }
 
 .img{
@@ -53,16 +53,5 @@
     80% {
         -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
-    }
-}
-
-@media only screen and (max-device-width: 500px){
-    .container{
-        margin: auto;
-        width: 310px;
-        height: auto;
-    }
-    .conteudo{
-        width: 200px;
     }
 }

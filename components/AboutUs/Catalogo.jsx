@@ -13,25 +13,21 @@ export default function Catalogo(){
                                 src='/img/icons/coracao.ico'
                                 width={40}
                                 height={40}
-                                alt='icone coracao'
                             />
                             <Image
                                 src='/img/icons/leao.ico'
                                 width={40}
                                 height={40}
-                                alt='icone leao'
                             />
                             <Image
                                 src='/img/icons/sorriso.ico'
                                 width={40}
                                 height={40}
-                                alt='icone sorrisso'
                             />
                             <Image
                                 src='/img/icons/bandeira.ico'
                                 width={40}
                                 height={40}
-                                alt='icone bandeira'
                             />
                         </div>
                         <p>
@@ -68,7 +64,6 @@ export default function Catalogo(){
                                 src='/img/icons/porco.png'
                                 width={75}
                                 height={75}
-                                alt='icone porco'
                             />
                             <label><b>EUROMONEY AWARDS</b></label>
                             <p>Melhor Banco Digital da América Latina</p>
@@ -79,7 +74,6 @@ export default function Catalogo(){
                                 src='/img/icons/trofeu.png'
                                 width={75}
                                 height={75}
-                                alt='icone trofeu'
                             />
                             <label><b>GLOBAL FINANCE</b></label>
                             <p>Melhor Banco Digital do Brasil</p>
@@ -90,7 +84,6 @@ export default function Catalogo(){
                                 src='/img/icons/planeta.png'
                                 width={75}
                                 height={75}
-                                alt='icone planeta'
                             />
                             <label><b>LEARNING & PERFORMANCE</b></label>
                             <p>Destaque Nacional Business Digital</p>
@@ -101,7 +94,6 @@ export default function Catalogo(){
                                 src='/img/icons/banco.png'
                                 width={75}
                                 height={75}
-                                alt='icone banco'
                             />
                             <label><b>PRÊMIO RELATÓRIO BANCÁRIO</b></label>
                             <p>Excelência em Aplicativo</p>
@@ -112,7 +104,6 @@ export default function Catalogo(){
                                 src='/img/icons/invencao.png'
                                 width={75}
                                 height={75}
-                                alt = 'icone invencao'
                             />
                             <label><b>INNOVACIÓN FINANCIERA</b></label>
                             <p>1º lugar Banco BooBank com o case Boo</p>

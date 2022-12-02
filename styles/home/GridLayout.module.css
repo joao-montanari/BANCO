@@ -1,6 +1,5 @@
 .container{
     width: 80%;
-    display: grid;
     height: 550px;
     margin: 100px auto;
 }
@@ -33,14 +32,4 @@
     height: 75%;
     display: flex;
     align-items: center;
-}
-
-@media only screen and (max-device-width: 500px){
-    .container{
-        height: 1300px;
-    }
-    .cards{
-        display: grid;
-        height: 1000px;
-    }
 }

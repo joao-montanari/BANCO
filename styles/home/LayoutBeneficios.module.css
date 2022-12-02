@@ -29,17 +29,3 @@
     height: 200px;
     font-size: 15px;
 }
-
-@media only screen and (max-device-width: 500px){
-    .container{
-        height: 1200px;
-    }
-    .child{
-        display: grid;
-        height: 100%;
-    }
-    .icones{
-        display: grid;
-        height: 800px;
-    }
-}

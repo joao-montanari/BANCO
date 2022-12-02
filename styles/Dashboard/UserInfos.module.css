@@ -2,20 +2,34 @@
     width: 100%;
     color: #fff;
     height: 400px;
-    display: grid;
+    display: flex;
     align-items: center;
     background-color: #00BFA6;
     justify-content: space-around;
 }
 
 .child{
-    display: grid;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #fff;
+    width: 700px;
+    display: flex;
+    border: 1px solid #000;
     justify-content: space-around;
 }
 
-.child h1{
-    font-size: 45px;
+.content h1{
+    font-size: 50px;
+}
+
+.content h4{
+    font-size: larger;
+}
+
+.content{
+    border: 1px solid #000;
+}
+
+.photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #000;
 }

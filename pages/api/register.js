@@ -4,54 +4,23 @@ export default async (req, res) => {
   let accessToken = null;
 
   if(req.method === 'POST') {
-    const { email, username, password, nome_completo, data_nascimento, empregado, sexo } = req.body
+    const {email, username, senha} = req.body
+    
+
+    const config = {
+      headers : {
+        'Accept' : 'application/json',
+        'Content-Type' : 'application/json',
+      }
+    }
+
+    const body = {
+      username : username,
+      password : senha
+    }
 
     try {
-      const config = {
-        headers : {
-          'Accept' : 'application/json',
-          'Content-Type' : 'application/json',
-        }
-      }
-  
-      const bodyUser = {
-        "email" : email,
-        "username" : username,
-        "password" : password
-      }
-  
-      const response = await axios.post('http://localhost:8000/auth/users/', bodyUser, config)
-  
-      const bodyToken = {
-        "username" : username,
-        "password" : password
-      }
-  
-      const { data:accessResponse } = await axios.post('http://localhost:8000/auth/jwt/create/', bodyToken, config)
-      accessToken = accessResponse.access
-  
-      const userConfig = {
-        ...config,
-        headers : {
-          'Authorization' : 'JWT ' + accessToken
-        }
-      }
-  
-      const { data } = await axios.get('http://localhost:8000/auth/users/me/', userConfig)
-  
-      const bodyCliente = {
-        "nome_completo" : nome_completo,
-        "data_nacimento": data_nascimento,
-        "empregado": empregado,
-        "sexo": sexo,
-        "user": data.id
-      }
-  
-      const {data: clientData} = await axios.post('http://localhost:8000/home/novocliente/', bodyCliente, userConfig)
-      console.log(clientData)
-
-      
-
+      await axios.post('http://localhost:8000/auth/users', body, config)
     } catch (error) {
       if (error.reponse) {
         console.error(error.response.data);
