@@ -1,5 +1,6 @@
 import Styles from '../../styles/Cadastro/Form.module.css';
 import Notiflix from 'notiflix';
+import { IMaskInput } from "react-imask";
 
 import Link from 'next/link';
 import { useContext, useState } from 'react';
@@ -82,11 +83,12 @@ export default function Form(){
                 <label>Indefinido</label>
             </div>
             <div className={Styles.content}>
-                <input
+                <IMaskInput
                     className={Styles.inputUpper}
-                    type="number"
+                    // type="number"
                     value = {cpf}
                     placeholder='CPF'
+                    mask = {'000.000.000-00'}
                     onChange={(e) => setCpf(e.target.value)}
                 />
                 <input
