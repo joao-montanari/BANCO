@@ -26,7 +26,7 @@ export const AuthenticationProvider = ({ children }) => {
         }
 
         try {
-            const { data:accessResponse } = await axios.post('http://localhost:3000/api/login', body, config)
+            const { data:accessResponse } = await axios.post('https://boobank.vercel.app/api/login', body, config)
         
             if (accessResponse && accessResponse.user) {
                 setUser(accessResponse.user)
@@ -76,7 +76,7 @@ export const AuthenticationProvider = ({ children }) => {
         console.log(body)
 
         try {
-            await axios.post('http://localhost:3000/api/register', body, config)
+            await axios.post('https://boobank.vercel.app/api/register', body, config)
         } catch(error) {
             if (error.response && error.response.data) {
                 setError(error.response.data.messege)

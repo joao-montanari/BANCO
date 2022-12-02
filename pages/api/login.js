@@ -23,7 +23,7 @@ export default async (req, res) => {
     }
 
     try {
-      const { data:accessResponse } = await axios.post('http://localhost:8000/auth/jwt/create', body, config)
+      const { data:accessResponse } = await axios.post('http://projeto-api-backend.azurewebsites.net/auth/jwt/create', body, config)
       accessToken = accessResponse.access
       res.setHeader(
         'Set-Cookie',
@@ -57,13 +57,13 @@ export default async (req, res) => {
       }
     }
 
-    const { data } = await axios.get('http://localhost:8000/auth/users/me/', userConfig)
+    const { data } = await axios.get('http://projeto-api-backend.azurewebsites.net/auth/users/me/', userConfig)
     console.log('Usuario especifico')
     console.log(data.id)
     let idusuario = data.id
 
 
-    const { data:userData } = await axios.get('http://localhost:8000/home/novocliente/', userConfig)
+    const { data:userData } = await axios.get('http://projeto-api-backend.azurewebsites.net/home/novocliente/', userConfig)
     
     userData.forEach(client => {
       if (client.user === idusuario){
