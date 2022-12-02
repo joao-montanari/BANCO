@@ -76,3 +76,9 @@
     color: #fff;
     justify-content: space-around;
 }
+
+@media only screen and (max-device-width: 800px){
+    .container{
+        width: 100%;
+    }
+}
