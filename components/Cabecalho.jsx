@@ -6,6 +6,7 @@ export default function Cabecalho(){
     return(
         <div className={Styles.container}>
             <Image
+                className={Styles.logo}
                 src='/img/logo.png'
                 width={100} 
                 height={100}
@@ -16,7 +17,7 @@ export default function Cabecalho(){
                 <li> <Link href='/AboutUs'> <button>Sobre Nós</button> </Link> </li>
                 <li> <Link href='/'> <button>Home</button> </Link> </li>
             </ul>
-            <Link href='/Cadastro'> <button className={Styles.btn}>Quero a minha conta</button> </Link>
+            <Link href='/Cadastro'> <button className={Styles.btn}>Minha conta</button> </Link>
         </div>
     )
 }

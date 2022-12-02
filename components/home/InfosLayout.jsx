@@ -6,7 +6,9 @@ import Image from 'next/image';
 export default function InfosLayout(){
     return(
         <div className={Styles.container}>
-            <h1 className={Styles.title}>No BooBank você faz tudo online e tem vantagens especiais para fazer os planos acontecerem.</h1>
+            <h1 className={Styles.title}>
+                No BooBank você faz tudo online e tem vantagens especiais para fazer os planos acontecerem.
+            </h1>
             <div className={Styles.child}>
                 <div className={Styles.content}>
                     <WideCard
