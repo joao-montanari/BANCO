@@ -85,7 +85,6 @@ export default function Form(){
             <div className={Styles.content}>
                 <IMaskInput
                     className={Styles.inputUpper}
-                    // type="number"
                     value = {cpf}
                     placeholder='CPF'
                     mask = {'000.000.000-00'}
