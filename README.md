@@ -21,7 +21,7 @@ Já para poder desenvolver a parte de back-end com as lógicas de API foi utiliz
 
 ## Links
 
-Alguns Links relacionados ao projeto:
+Links relacionados ao projeto:
 - [Hospedagem na Vercel](https://boobank.vercel.app/)
 - [Hospedagem da API](https://google.com)
 - [Repositório da API](https://github.com/joao-montanari/back-end)

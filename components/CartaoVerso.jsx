@@ -13,6 +13,7 @@ export default function CartaoVerso(){
                 <div className={Styles.part}>
                     <h2>platinum</h2>
                     <Image
+                        className={Styles.silver}
                         src='/img/silver.png'
                         width={150}
                         height={75}

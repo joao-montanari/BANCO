@@ -83,3 +83,13 @@
     height: 12%;
     margin: 30% auto;
 }
+
+@media only screen and (max-device-width: 500px){
+    .container{
+        width: 90%;
+        height: 190px;
+    }
+    .marcaNome p{
+        font-size: larger;
+    }
+}

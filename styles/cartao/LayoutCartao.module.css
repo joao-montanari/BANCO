@@ -1,4 +1,4 @@
-.container{
+.global{
     width: 80%;
     display: grid;
     height: 1100px;
@@ -11,4 +11,15 @@
 .titulo{
     color: #008371;
     margin: 20px 150px;
+}
+
+@media only screen and (max-device-width: 500px){
+    .global{
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+    .titulo{
+        margin: auto;
+    }
 }

@@ -2,7 +2,7 @@
     display: grid;
     padding: 5px;
     width: 250px;
-    height: 250px;
+    height: auto;
     margin: 30px auto;
     text-align: center;
     border-radius: 5px;
