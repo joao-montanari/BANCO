@@ -9,16 +9,16 @@ import IconCard from '../components/IconCard';
 import { AuthenticationContext } from '../context/AuthenticationContext';
 
 export default function Deshboard(){
-    const { user } = useContext(AuthenticationContext);
+    //const { user } = useContext(AuthenticationContext);
     const { accessToken } = useContext(AuthenticationContext);
     //console.log(user)
 
-    // const user = {
-    //     nome_completo : 'Joao Vitor Montanari da Silva',
-    //     data_nacimento : '21/06/2003',
-    //     sexo : 'M',
-    //     empregado : true
-    // }
+    const user = {
+        nome_completo : 'Joao Vitor Montanari da Silva',
+        data_nacimento : '21/06/2003',
+        sexo : 'M',
+        empregado : true
+    }
 
     return(
         <>

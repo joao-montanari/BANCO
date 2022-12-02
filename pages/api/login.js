@@ -33,6 +33,7 @@ export default async (req, res) => {
           { httpOnly: true, secure: false, sameSite: 'strict', maxAge: 60 * 60 * 1, path: '/' }
           )
       )
+
     } catch (error) {
       if (error.reponse) {
         console.error(error.response.data);

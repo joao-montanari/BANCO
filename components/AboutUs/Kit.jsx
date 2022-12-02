@@ -7,6 +7,7 @@ export default function Kit(){
         <div className={Styles.container}>
             <div className={Styles.imagem}>
                 <Image
+                    className={Styles.img}
                     src='/img/celular.png'
                     width={400}
                     height={600}
@@ -22,18 +23,21 @@ export default function Kit(){
                 </p>
                 <div className={Styles.logos}>
                     <Image
+                        className={Styles.logo}
                         src='/img/logo-branca.png'
                         width={100}
                         height={100}
                         alt='logo branca'
                     />
                     <Image
+                        className={Styles.logo}
                         src='/img/logo-preta.png'
                         width={100}
                         height={100}
                         alt='logo preta'
                     />
                     <Image
+                        className={Styles.logo}
                         src='/img/logo-verde.png'
                         width={100}
                         height={100}

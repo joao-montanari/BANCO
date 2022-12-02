@@ -20,3 +20,9 @@
     margin: 15px 15px;
     text-align: justify;
 }
+
+@media only screen and (max-device-width: 500px){
+    .container{
+        height: 1300px;
+    }
+}
