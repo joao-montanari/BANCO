@@ -8,7 +8,7 @@ export default function Wallpaper(){
             <div className={Styles.child}>
                 <h1>O cartão grátis cheio de benefícios para você fazer acontecer</h1>
                 <p>É sem anuidade, com Mimos exclusivos e muito mais!</p>
-                <Link href='/'><button>Pedir meu cartão</button></Link>
+                <Link href='/Cadastro'><button>Pedir meu cartão</button></Link>
             </div>
             <div className={Styles.faixa}>
 

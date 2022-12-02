@@ -9,6 +9,7 @@ export default function ImageCard(props){
                 src={props.image}
                 width={300}
                 height={200}
+                alt = 'imagem'
             />
             <h2>{props.titulo}</h2>
             <p>

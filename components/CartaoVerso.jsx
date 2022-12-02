@@ -16,6 +16,7 @@ export default function CartaoVerso(){
                         src='/img/silver.png'
                         width={150}
                         height={75}
+                        alt='simbolo silver'
                     />
                 </div>
                 <div className={Styles.box}>

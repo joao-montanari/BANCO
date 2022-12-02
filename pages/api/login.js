@@ -1,7 +1,9 @@
 import axios from 'axios';
 import cookie from 'cookie';
+import { useState } from 'react';
 
 export default async (req, res) => {
+  let cliente = {};
   let accessToken = null;
 
   if(req.method === 'POST') {
@@ -28,12 +30,7 @@ export default async (req, res) => {
         cookie.serialize(
           'Refresh',
           accessResponse.refresh,
-          {
-            httpOnly: true,
-            secure: false,
-            sameSite: 'strict',
-            maxAge: 60 * 60 * 1, path: '/'
-          }
+          { httpOnly: true, secure: false, sameSite: 'strict', maxAge: 60 * 60 * 1, path: '/' }
           )
       )
     } catch (error) {
@@ -59,10 +56,23 @@ export default async (req, res) => {
       }
     }
 
-    const { data:userData } = await axios.get('http://localhost:8000/home/cliente/', userConfig)
-    console.log(userData)
+    const { data } = await axios.get('http://localhost:8000/auth/users/me/', userConfig)
+    console.log('Usuario especifico')
+    console.log(data.id)
+    let idusuario = data.id
 
-    res.status(200).json({user: userData, access: accessToken})
+
+    const { data:userData } = await axios.get('http://localhost:8000/home/novocliente/', userConfig)
+    
+    userData.forEach(client => {
+      if (client.user === idusuario){
+        cliente = client;
+      }
+    });
+
+    console.log(cliente)
+
+    res.status(200).json({user: cliente, access: accessToken})
 
   } else {
     res.setHeader('Allow', ['POST'])

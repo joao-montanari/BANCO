@@ -48,3 +48,16 @@
 .container button:hover{
     font-size: 23px;
 }
+
+@media only screen and (max-device-width: 500px){
+    .container{
+        width: 90%;
+        height: 700px;
+    }
+    .container input{
+        width: 90%;
+    }
+    .container textarea{
+        width: 90%;
+    }
+}

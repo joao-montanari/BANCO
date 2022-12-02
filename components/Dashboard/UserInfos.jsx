@@ -1,18 +1,36 @@
 import Styles from '../../styles/Dashboard/UserInfos.module.css';
 
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export default function UserInfos(props){
+    const [genero, setGenero] = useState();
+    const [empregado, setEmpregado] = useState();
+
+    useEffect(() => {
+        if (props.sexo === 'M') {
+            setGenero('Masculino');
+        } else if (props.sexo === 'F') {
+            setGenero('Feminino');
+        } else {
+            setGenero('Indefinido');
+        }
+
+        if (props.empregado === true){
+            setEmpregado('Empregado');
+        } else {
+            setEmpregado('Desempregado');
+        }
+        
+    },[])
+
     return(
         <div className={Styles.container}>
             <div className={Styles.child}>
-                <div className={Styles.photo}>
-                <Image src={props.foto} width={100} height={100}/>
-                </div>
-                <div className={Styles.content}>
-                        <h1>{props.nome}</h1>
-                        <h4>Data nascimento: {props.nascimento}</h4>
-                </div>
+                <h1>{props.nome}</h1>
+                <h4>Data nascimento: {props.nascimento}</h4>
+                <h4>Genero: {genero}</h4>
+                <h4>Situação: {empregado}</h4>
             </div>
         </div>
     )

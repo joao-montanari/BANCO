@@ -10,6 +10,7 @@ export default function WideCard(props){
                     src={props.icone}
                     width={80}
                     height={80}
+                    alt='icone'
                 />
             </div>
             <div className={Styles.conteudo}>

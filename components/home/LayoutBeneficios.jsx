@@ -12,6 +12,7 @@ export default function LayoutBeneficios(){
                             src='/img/icons/carrinho.ico'
                             width={100}
                             height={100}
+                            alt='icone carrinho'
                         />
                         <p>
                             Encontre os melhores produtos nas maiores lojas do país com facilidade e conveniência. Fácil e rápido.
@@ -22,6 +23,7 @@ export default function LayoutBeneficios(){
                             src='/img/icons/celular.ico'
                             width={100}
                             height={100}
+                            alt='icone celular'
                         />
                         <p>
                             Compre com segurança sem sair do ambiente BooBank. Nós filtramos o que é do seu interesse.
@@ -32,6 +34,7 @@ export default function LayoutBeneficios(){
                             src='/img/icons/dinheiro.ico'
                             width={100}
                             height={100}
+                            alt='icone dinheiro'
                         />
                         <p>
                             Receba dinheiro de volta em todas as compras. Não se preocupe, a sua segurança sempre está na frente.

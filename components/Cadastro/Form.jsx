@@ -3,10 +3,11 @@ import Notiflix from 'notiflix';
 
 import Link from 'next/link';
 import { useContext, useState } from 'react';
-import { AuthenticationContext } from '../../pages/context/AuthenticationContext';
+import { AuthenticationContext } from '../../context/AuthenticationContext';
 
 export default function Form(){
     const [nome, setNome] = useState('');
+    const [cpf, setCpf] = useState('');
     const [nascimento, setNascimento] = useState('');
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
@@ -32,9 +33,14 @@ export default function Form(){
                 let body = {
                     "email" : email,
                     "senha" : senha,
-                    "username" : nome
+                    "username" : cpf,
+                    "nome_completo" : nome,
+                    "data_nascimento" : nascimento,
+                    "empregado" : empregado,
+                    "sexo" : sexo,
                 }
-                register({ email, nome, senha })
+
+                register(body)
             } else{
                 Notiflix.Notify.failure('Um ou mais campos não foram preenchidos')
             }
@@ -48,7 +54,7 @@ export default function Form(){
         <form className={Styles.container} onSubmit={Cadastro}>
             <h1>Cadastro</h1>
             <div className={Styles.escolha}>
-                    <h2>Gênero:</h2>
+                <h2>Gênero:</h2>
             </div>
             <div className={Styles.escolha}>
                 <input
@@ -78,6 +84,12 @@ export default function Form(){
             <div className={Styles.content}>
                 <input
                     className={Styles.inputUpper}
+                    type="number"
+                    value = {cpf}
+                    placeholder='CPF'
+                    onChange={(e) => setCpf(e.target.value)}
+                />
+                <input
                     type="text"
                     value = {nome}
                     placeholder='Nome completo'

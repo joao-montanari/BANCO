@@ -10,6 +10,7 @@ export default function Kit(){
                     src='/img/celular.png'
                     width={400}
                     height={600}
+                    alt='img celular boobank'
                 />
             </div>
             <div className={Styles.child}>
@@ -24,16 +25,19 @@ export default function Kit(){
                         src='/img/logo-branca.png'
                         width={100}
                         height={100}
+                        alt='logo branca'
                     />
                     <Image
                         src='/img/logo-preta.png'
                         width={100}
                         height={100}
+                        alt='logo preta'
                     />
                     <Image
                         src='/img/logo-verde.png'
                         width={100}
                         height={100}
+                        alt='logo verde'
                     />
                 </div>
                 <p>

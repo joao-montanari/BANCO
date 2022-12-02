@@ -1,5 +1,5 @@
 import Styles from '../../styles/Login/Form.module.css';
-import { AuthenticationContext } from '../../pages/context/AuthenticationContext';
+import { AuthenticationContext } from '../../context/AuthenticationContext';
 import Notiflix from 'notiflix';
 
 import { useContext, useState } from 'react';
@@ -30,9 +30,9 @@ export default function Form(){
             <div className={Styles.content}>
                 <input
                     className={Styles.inputUpper}
-                    type="text"
+                    type="number"
                     value = {user}
-                    placeholder='Usuario'
+                    placeholder='CPF'
                     name='user'
                     onChange={(e) => setUser(e.target.value)}
                 />

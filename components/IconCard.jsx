@@ -10,6 +10,7 @@ export default function IconCard(props){
                     src={props.icon}
                     width={65}
                     height={65}
+                    alt='icone'
                 />
             </div>
             <h2>{props.titulo}</h2>
