@@ -91,4 +91,11 @@
         width: 90%;
         height: 100%;
     }
+    .local{
+        display: grid;
+    }
+    .interno{
+        width: 100%;
+        height: auto;
+    }
 }
