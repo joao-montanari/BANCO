@@ -17,3 +17,13 @@
     display: flex;
     justify-content: space-around;
 }
+
+@media only screen and (max-device-width: 920px){
+    .container{
+        height: 1300px;
+    }
+    .child{
+        display: grid;
+        height: 1000px;
+    }
+}

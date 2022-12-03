@@ -20,3 +20,27 @@
 .img{
     margin: auto;
 }
+
+@media only screen and (max-device-width: 1200px){
+    .container{
+        height: auto;
+        display: grid;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .child{
+        width: 100%;
+    }
+    .content{
+        width: 95%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-device-width: 700px){
+    .img{
+        width: 100%;
+        height: auto;
+    }
+}

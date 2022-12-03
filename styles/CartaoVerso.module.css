@@ -111,9 +111,9 @@
     font-size: medium;
 }
 
-@media only screen and (max-device-width: 500px){
+@media only screen and (max-device-width: 1140px){
     .verso{
-        width: 90%;
+        width: 350px;
         height: 190px;
     }
     .box{
@@ -123,8 +123,8 @@
         font-size: 5px;
     }
     .silver{
-        width: 100px;
-        height: 50px;
+        width: 80px;
+        height: 40px;
     }
     .part{
         width: 100px;
@@ -148,9 +148,12 @@
         font-size: small;
     }
     .faixa{
-        height: 10%;
+        height: 35px;
     }
     .emissao{
         font-size: 10px;
+    }
+    .part h2{
+        font-size: larger;
     }
 }

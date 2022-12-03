@@ -12,3 +12,13 @@
     align-items: center;
     justify-content: space-around;
 }
+
+@media only screen and (max-device-width: 1200px){
+    .container{
+        height: auto;
+    }
+    .child{
+        display: grid;
+        height: 1000px;
+    }
+}
