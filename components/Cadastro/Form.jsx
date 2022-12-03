@@ -52,99 +52,105 @@ export default function Form(){
     }
 
     return(
-        <form className={Styles.container} onSubmit={Cadastro}>
-            <h1>Cadastro</h1>
-            <div className={Styles.escolha}>
-                <h2>Gênero:</h2>
-            </div>
-            <div className={Styles.escolha}>
-                <input
-                    type="radio"
-                    id='feminino'
-                    name='genero'
-                    onClick={(e) => setSexo('F')}
-                />
-                <input
-                    type="radio"
-                    id='masculino'
-                    name='genero'
-                    onClick={(e) => setSexo('M')}
-                />
-                <input
-                    type="radio"
-                    id='indefinido'
-                    name='genero'
-                    onClick={(e) => setSexo('I')}
-                />
-            </div>
-            <div className={Styles.escolha}>
-                <label>Feminino</label>
-                <label>Masculino</label>
-                <label>Indefinido</label>
-            </div>
-            <div className={Styles.content}>
-                <IMaskInput
-                    className={Styles.inputUpper}
-                    value = {cpf}
-                    placeholder='CPF'
-                    mask = {'000.000.000-00'}
-                    onChange={(e) => setCpf(e.target.value)}
-                />
-                <input
-                    type="text"
-                    value = {nome}
-                    placeholder='Nome completo'
-                    onChange={(e) => setNome(e.target.value)}
-                />
-                <input
-                    type="date" 
-                    value = {nascimento}
-                    placeholder='Data de Nascimento'
-                    onChange={(e) => setNascimento(e.target.value)}
-                />
-                <input 
-                    type="email" 
-                    value = {email}
-                    placeholder='email'
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-                <input 
-                    type="password" 
-                    value = {senha}
-                    placeholder='Senha'
-                    onChange={(e) => setSenha(e.target.value)}
-                />
-                <input 
-                    className={Styles.inputDown} 
-                    type="password"
-                    value = {confsenha}
-                    placeholder='Repetir senha'
-                    onChange={(e) => setConfsenha(e.target.value)}
-                />
-            </div>
-            <div className={Styles.escolha}>
-                <h2>Você se encontra empregado?</h2>
-            </div>
-            <div className={Styles.escolha}>
-                <input
-                    type="radio"
-                    id='sim'
-                    name='opcao'
-                    onClick={(e) => setEmpregado(true)}
-                />
-                <input
-                    type="radio"
-                    id='não'
-                    name='opcao'
-                    onClick={(e) => setEmpregado(false)}
-                />
-            </div>
-            <div className={Styles.escolha}>
-                <label>Sim</label>
-                <label>Não</label>
-            </div>
-            <button type='submit'>CONTINUAR</button>
-            <Link href='/Login'> JÁ SOU CLIENTE </Link>
-        </form>
+        <>
+            <form className={Styles.container} onSubmit={Cadastro}>
+                <h1>Cadastro</h1>
+                <div className={Styles.escolha}>
+                    <h2>Gênero:</h2>
+                </div>
+                <div className={Styles.escolha}>
+                    <input
+                        type="radio"
+                        id='feminino'
+                        name='genero'
+                        onClick={(e) => setSexo('F')}
+                    />
+                    <input
+                        type="radio"
+                        id='masculino'
+                        name='genero'
+                        onClick={(e) => setSexo('M')}
+                    />
+                    <input
+                        type="radio"
+                        id='indefinido'
+                        name='genero'
+                        onClick={(e) => setSexo('I')}
+                    />
+                </div>
+                <div className={Styles.escolha}>
+                    <label>Feminino</label>
+                    <label>Masculino</label>
+                    <label>Indefinido</label>
+                </div>
+                <div className={Styles.content}>
+                    <IMaskInput
+                        className={Styles.inputUpper}
+                        value = {cpf}
+                        placeholder='CPF'
+                        mask = {'000.000.000-00'}
+                        onChange={(e) => setCpf(e.target.value)}
+                    />
+                    <input
+                        type="text"
+                        value = {nome}
+                        placeholder='Nome completo'
+                        onChange={(e) => setNome(e.target.value)}
+                    />
+                    <input
+                        type="date" 
+                        value = {nascimento}
+                        placeholder='Data de Nascimento'
+                        onChange={(e) => setNascimento(e.target.value)}
+                    />
+                    <input 
+                        type="email" 
+                        value = {email}
+                        placeholder='email'
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <input 
+                        type="password" 
+                        value = {senha}
+                        placeholder='Senha'
+                        onChange={(e) => setSenha(e.target.value)}
+                    />
+                    <input 
+                        className={Styles.inputDown} 
+                        type="password"
+                        value = {confsenha}
+                        placeholder='Repetir senha'
+                        onChange={(e) => setConfsenha(e.target.value)}
+                    />
+                </div>
+                <div className={Styles.escolha}>
+                    <h2>Você se encontra empregado?</h2>
+                </div>
+                <div className={Styles.escolha}>
+                    <input
+                        type="radio"
+                        id='sim'
+                        name='opcao'
+                        onClick={(e) => setEmpregado(true)}
+                    />
+                    <input
+                        type="radio"
+                        id='não'
+                        name='opcao'
+                        onClick={(e) => setEmpregado(false)}
+                    />
+                </div>
+                <div className={Styles.escolha}>
+                    <label>Sim</label>
+                    <label>Não</label>
+                </div>
+                <button type='submit'>CONTINUAR</button>
+            </form>
+            <button className={Styles.btnlogin}>
+                <Link href='/Login'>
+                    JÁ SOU CLIENTE
+                </Link>
+            </button>
+        </>
     )
 }

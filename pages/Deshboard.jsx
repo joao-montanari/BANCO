@@ -11,7 +11,14 @@ import { AuthenticationContext } from '../context/AuthenticationContext';
 export default function Deshboard(){
     const { user } = useContext(AuthenticationContext);
     const { accessToken } = useContext(AuthenticationContext);
-    console.log(user)
+    //console.log(user)
+
+    // const user = {
+    //     nome_completo : 'Joao Montanari',
+    //     data_nacimento : '05/08/2003',
+    //     sexo : 'M',
+    //     empregado : true
+    // }
 
     return(
         <>
