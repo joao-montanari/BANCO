@@ -30,7 +30,7 @@
     font-size: 15px;
 }
 
-@media only screen and (max-device-width: 500px){
+@media only screen and (max-device-width: 1140px){
     .container{
         height: 1200px;
     }
