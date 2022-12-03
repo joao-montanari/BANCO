@@ -78,6 +78,11 @@ export const AuthenticationProvider = ({ children }) => {
         try {
             await axios.post('https://boobank.vercel.app/api/register', body, config)
         } catch(error) {
+            
+            Notiflix.Notify.info('Algo deu de errado em seu cadastro!')
+            Notiflix.Notify.warning('Verifique se não existe uma conta já cadastrada com seu CPF.')
+            Notiflix.Notify.warning('Ou tente criar uma senha mais forte.')
+
             if (error.response && error.response.data) {
                 setError(error.response.data.messege)
                 return
