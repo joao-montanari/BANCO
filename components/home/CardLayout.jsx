@@ -10,15 +10,15 @@ export default function CardLayout(){
             <div className={Styles.cards}>
                 <Card
                     titulo = 'Pague menos taxas'
-                    texto = 'Teste de texto para poder preencher os card da home do banco, vangens de ter o banco do montanari'
+                    texto = 'Para poder fazer dos seus sonhos financeiros realidade, sem ter que tirar mais dinhero do bolso'
                 />
                 <Card
                     titulo = 'Vantagens exclusivas'
-                    texto = 'Teste de texto para poder preencher os card da home do banco, vangens de ter o banco do montanari'
+                    texto = 'Aqui você encontra vantagens unicas, disponíveis apenas para usuários do BooBank, o banco digital'
                 />
                 <Card
                     titulo = 'Segurança nos negócios'
-                    texto = 'Teste de texto para poder preencher os card da home do banco, vangens de ter o banco do montanari'
+                    texto = 'Sem sair de casa você pode realizar as suas operações financeiras, sem dores de cabeça e sem medo'
                 />
             </div>
             <Link href='/Cadastro'><button>Quero minha conta</button></Link>
