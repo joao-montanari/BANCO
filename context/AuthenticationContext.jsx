@@ -38,6 +38,8 @@ export const AuthenticationProvider = ({ children }) => {
             router.push('/Deshboard')
 
         } catch(error) {
+            Notiflix.Notify.warning('Verifique se o CPF e a senha estão corretos!')
+            
             if (error.response && error.response.data) {
                 setError(error.response.data.messege)
                 return
@@ -78,7 +80,7 @@ export const AuthenticationProvider = ({ children }) => {
         try {
             await axios.post('https://boobank.vercel.app/api/register', body, config)
         } catch(error) {
-            
+
             Notiflix.Notify.info('Algo deu de errado em seu cadastro!')
             Notiflix.Notify.warning('Verifique se não existe uma conta já cadastrada com seu CPF.')
             Notiflix.Notify.warning('Ou tente criar uma senha mais forte.')
