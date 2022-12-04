@@ -21,8 +21,9 @@
     text-align: justify;
 }
 
-@media only screen and (max-device-width: 500px){
+@media only screen and (max-device-width: 900px){
     .container{
-        height: 1300px;
+        width: 90%;
+        height: auto;
     }
 }

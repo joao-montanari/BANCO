@@ -42,23 +42,25 @@
     justify-content: space-around;
 }
 
-@media only screen and (max-device-width: 500px){
+@media only screen and (max-device-width: 1200px){
     .container{
         width: 90%;
-        height: 1200px;
+        height: auto;
         display: grid;
     }
     .imagem{
         width: 100%;
         height: auto;
         margin: auto;
+        display: grid;
     }
     .img{
         width: 300px;
         height: 460px;
+        margin: auto;
     }
     .child{
-        width: 330px;
+        width: 100%;
         height: auto;
         margin: auto;
     }

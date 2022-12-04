@@ -87,7 +87,7 @@
     justify-content: space-around;
 }
 
-@media only screen and (max-device-width: 500px){
+@media only screen and (max-device-width: 1050px){
     .global{
         height: auto;
     }
@@ -107,5 +107,23 @@
     .icons{
         display: grid;
         height: auto;
+    }
+}
+
+@media only screen and (max-device-width: 1200px){
+    .global{
+        height: auto;
+    }
+    .container{
+        height: auto;
+    }
+    .child{
+        display: grid;
+    }
+    .cont{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
     }
 }
