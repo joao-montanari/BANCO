@@ -10,6 +10,7 @@ export default function Unload(){
                     src='/img/logo-preta.png'
                     width={270}
                     height={250}
+                    alt = 'logo-preta'
                 />
                 <h1>É preciso fazer login para poder renderizar os itens da página!</h1>
             </div>

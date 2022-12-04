@@ -6,7 +6,8 @@ import Notiflix from 'notiflix';
 export const AuthenticationContext = createContext('');
 
 export const AuthenticationProvider = ({ children }) => {
-    const [user, setUser] = useState(null)
+    const [cliente, setCliente] = useState(null)
+    const [usuario, setUsuario] = useState(null)
     const [accessToken, setAccessToken] = useState(null)
     const [error, setError] = useState(null)
 
@@ -28,9 +29,6 @@ export const AuthenticationProvider = ({ children }) => {
         try {
             const { data:accessResponse } = await axios.post('https://boobank.vercel.app/api/login', body, config)
         
-            if (accessResponse && accessResponse.user) {
-                setUser(accessResponse.user)
-            }
             if (accessResponse && accessResponse.access) {
                 setAccessToken(accessResponse.access)
             }
@@ -104,8 +102,42 @@ export const AuthenticationProvider = ({ children }) => {
         Notiflix.Notify.success('Usuario cadastrado com sucesso!')
     }
 
+    const me = async() => {
+        const config = {
+            headers : {
+                'Accept' : 'application/json',
+                'Content-Type' : 'application/json'
+            }
+        }
+
+        try {
+            const { data:accessResponse } = await axios.get('https://boobank.vercel.app/api/me',config)
+            
+            if (accessResponse && accessResponse.usuario) {
+                setUsuario(accessResponse.usuario)
+            }
+            if (accessResponse && accessResponse.cliente) {
+                setCliente(accessResponse.cliente)
+            }
+        } catch(error) {
+            if (error.response && error.response.data) {
+                setError(error.response.data.messege)
+                return
+            } else if (error.request) {
+                setError('Algo deu de errado')
+                return
+            } else {
+                setError(error.response.data.messege)
+                return
+            }
+            console.error('Error', error.message);
+            setError('Algo deu de errado')
+            return
+        }
+    } 
+
     return (
-        <AuthenticationContext.Provider value={{ user, accessToken, error, login, register }}>
+        <AuthenticationContext.Provider value={{ cliente, usuario, accessToken, error, login, register, me }}>
             {children}
         </AuthenticationContext.Provider>
     )

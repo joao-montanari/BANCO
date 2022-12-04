@@ -20,14 +20,14 @@ export default async (req, res) => {
         "password" : password
       }
   
-      const response = await axios.post('http://projeto-api-backend.azurewebsites.net/auth/users/', bodyUser, config)
+      const response = await axios.post('https://projeto-api-backend.azurewebsites.net/auth/users/', bodyUser, config)
   
       const bodyToken = {
         "username" : username,
         "password" : password
       }
   
-      const { data:accessResponse } = await axios.post('http://projeto-api-backend.azurewebsites.net/auth/jwt/create/', bodyToken, config)
+      const { data:accessResponse } = await axios.post('https://projeto-api-backend.azurewebsites.net/auth/jwt/create/', bodyToken, config)
       accessToken = accessResponse.access
   
       const userConfig = {
@@ -37,7 +37,7 @@ export default async (req, res) => {
         }
       }
   
-      const { data } = await axios.get('http://projeto-api-backend.azurewebsites.net/auth/users/me/', userConfig)
+      const { data } = await axios.get('https://projeto-api-backend.azurewebsites.net/auth/users/me/', userConfig)
   
       const bodyCliente = {
         "nome_completo" : nome_completo,
@@ -47,7 +47,7 @@ export default async (req, res) => {
         "user": data.id
       }
   
-      const {data: clientData} = await axios.post('http://projeto-api-backend.azurewebsites.net/home/novocliente/', bodyCliente, userConfig)
+      const {data: clientData} = await axios.post('https://projeto-api-backend.azurewebsites.net/home/novocliente/', bodyCliente, userConfig)
       console.log(clientData)
 
       

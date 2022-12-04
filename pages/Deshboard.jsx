@@ -9,11 +9,17 @@ import IconCard from '../components/IconCard';
 import { AuthenticationContext } from '../context/AuthenticationContext';
 
 export default function Deshboard(){
-    const { user } = useContext(AuthenticationContext);
+    const { cliente } = useContext(AuthenticationContext);
+    const { usuario } = useContext(AuthenticationContext);
     const { accessToken } = useContext(AuthenticationContext);
-    //console.log(user)
 
-    // const user = {
+    const { me } = useContext(AuthenticationContext);
+
+    useEffect(() => {
+        me()
+    },[])
+
+    // const cliente = {
     //     nome_completo : 'Joao Montanari',
     //     data_nacimento : '05/08/2003',
     //     sexo : 'M',
@@ -26,13 +32,15 @@ export default function Deshboard(){
                 <title>BooBank | Deshboard</title>
             </Head>
             {
-                user ? (
+                cliente ? (
                     <>
                         <UserInfos
-                            nome = {user.nome_completo}
-                            nascimento = {user.data_nacimento}
-                            sexo = {user.sexo}
-                            empregado = {user.empregado}
+                            nome = {cliente.nome_completo}
+                            nascimento = {cliente.data_nacimento}
+                            sexo = {cliente.sexo}
+                            empregado = {cliente.empregado}
+                            cpf = {usuario.username}
+                            email = {usuario.email}
                         />
                         <div className={Styles.container}>
                             <IconCard
