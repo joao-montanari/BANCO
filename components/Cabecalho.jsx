@@ -5,19 +5,21 @@ import Styles from '../styles/Cabecalho.module.css';
 export default function Cabecalho(){
     return(
         <div className={Styles.container}>
-            <Image
-                className={Styles.logo}
-                src='/img/logo.png'
-                width={100} 
-                height={100}
-                alt='logo boobank'
-            />
+            <Link href='/'>
+                <Image
+                    className={Styles.logo}
+                    src='/img/logo.png'
+                    width={100} 
+                    height={100}
+                    alt='logo boobank'
+                />
+            </Link>
             <ul>
                 <li> <Link href='/cartao'> <button>Cartão</button> </Link> </li>
                 <li> <Link href='/AboutUs'> <button>Sobre Nós</button> </Link> </li>
-                <li> <Link href='/'> <button>Home</button> </Link> </li>
+                <li> <Link href='/Login'> <button>Login</button> </Link> </li>
             </ul>
-            <Link href='/Cadastro'> <button className={Styles.btn}>Minha conta</button> </Link>
+            <Link href='/Cadastro'> <button className={Styles.btn}>Cadastrar</button> </Link>
         </div>
     )
 }

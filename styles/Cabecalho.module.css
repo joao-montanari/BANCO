@@ -7,6 +7,10 @@
     justify-content: space-around;
 }
 
+.logo{
+    cursor: pointer;
+}
+
 .container ul{
     width: 400px;
     height: 100%;
@@ -82,7 +86,7 @@
     width: 100%;
 }
 
-@media only screen and (max-device-width: 500px){
+@media only screen and (max-device-width: 620px){
     .logo{
         width: 0px;
         height: 0px;
