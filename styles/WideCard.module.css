@@ -56,7 +56,7 @@
     }
 }
 
-@media only screen and (max-device-width: 500px){
+@media only screen and (max-device-width: 1250px){
     .container{
         margin: auto;
         width: 310px;
