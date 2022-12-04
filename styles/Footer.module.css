@@ -14,18 +14,18 @@
 
 .global{
     width: 80%;
-    height: 90%;
+    height: auto;
 }
 
 .local{
     width: 100%;
-    height: 60%;
+    height: auto;
     display: flex;
 }
 
 .localBottom{
     width: 100%;
-    height: 40%;
+    height: auto;
     display: flex;
 }
 
@@ -50,8 +50,8 @@
 }
 
 .icons{
-    width: 70%;
-    float: right;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-around;
 }
@@ -59,15 +59,17 @@
 .icon{
     width: 80px;
     height: 80px;
+    display: grid;
     border-radius: 50%;
     align-items: center;
+    margin: 10px;
 }
 
 .interno ul{
     text-align: right;
 }
 
-.icon img{
+.img{
     width: 80px;
     height: 80px;
 }
@@ -76,7 +78,7 @@
     padding: 10px;
 }
 
-@media only screen and (max-device-width: 500px){
+@media only screen and (max-device-width: 1000px){
     .child{
         height: auto;
     }
@@ -85,7 +87,7 @@
         height: 45px;
     }
     .apps{
-        width: 190px;
+        width: 80%;
     }
     .global{
         width: 90%;
@@ -95,7 +97,13 @@
         display: grid;
     }
     .interno{
-        width: 100%;
+        width: 85%;
         height: auto;
+    }
+    .interno ul{
+        text-align: left;
+    }
+    .TitleRede{
+        text-align: left;
     }
 }

@@ -1,6 +1,6 @@
 Projeto realizado por: `João Vitor Montanari da Silva`
 
-Turma: `Desenvolvimento de Sistemas - Bosch (Manhã)`
+Turma: `2º Termo em Desenvolvimento de Sistemas - Bosch (Manhã)`
 
 ## Projeto Integrador
 
@@ -16,8 +16,8 @@ Para o desenvolvimento do projeto foi necessário integrar diferentes conhecimen
 
 ## Ferramentas
 
-No projeto foi usado o framework do JavaScript baseado em React, `Next JS`. O mesmo se trata de uma ferramenta muito utilizada atualmente no mercado e apresenta soluções eficazes com bibliotecas e facilidades que são validas para a construção de um projeto completo que aborda aspectos do gerais.
-Já para poder desenvolver a parte de back-end com as lógicas de API foi utilizado o `DJango`, framework em Python que apresenta um alto nível de abstração, assim podendo desenvolver uma API completa de forma agil e eficiente.
+No projeto foi usado o framework do JavaScript baseado em React, `Next JS`. O mesmo se trata de uma ferramenta muito utilizada atualmente no mercado e apresenta soluções eficazes com bibliotecas e facilidades que são validas para a construção de um projeto completo que aborda aspectos gerais.
+Já para poder desenvolver a parte do back-end e as lógicas da API foi utilizado o `DJango`, framework em Python que apresenta um alto nível de abstração, assim podendo desenvolver uma API completa de forma agil e eficiente.
 
 ## Links
 
