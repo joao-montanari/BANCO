@@ -49,7 +49,7 @@
     font-size: 23px;
 }
 
-@media only screen and (max-device-width: 500px){
+@media only screen and (max-device-width: 600px){
     .container{
         width: 90%;
         height: 700px;
