@@ -35,7 +35,7 @@ export default async (req, res) => {
       //   )
       // )
 
-      localStorage.setItem('Access', accessResponse.access);
+      //localStorage.setItem('Access', accessResponse.access);
 
     } catch (error) {
       if (error.reponse) {
