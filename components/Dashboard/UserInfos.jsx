@@ -26,10 +26,10 @@ export default function UserInfos(props){
         
     },[])
 
-    function Logout(){
-        localStorage.removeItem('Access');
-        router.push('/');
-    }
+    // function Logout(){
+    //     localStorage.removeItem('Access');
+    //     router.push('/');
+    // }
 
     return(
         <div className={Styles.container}>
@@ -40,7 +40,7 @@ export default function UserInfos(props){
                 <h4>Situação: {empregado}</h4>
                 <h4>CPF: {props.cpf}</h4>
                 <h4>E-mail: {props.email}</h4>
-                <button onClick={Logout}>Logout</button>
+                <button>Logout</button>
             </div>
         </div>
     )

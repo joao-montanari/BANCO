@@ -26,16 +26,16 @@ export default async (req, res) => {
       const { data:accessResponse } = await axios.post('https://projeto-api-backend.azurewebsites.net/auth/jwt/create/', body, config)
       accessToken = accessResponse.access
 
-      // res.setHeader(
-      //   'Set-Cookie',
-      //   cookie.serialize(
-      //     'Access',
-      //     accessResponse.access,
-      //     { httpOnly: true, secure: false, sameSite: 'strict', maxAge: 60 * 60 * 1, path: '/' }
-      //   )
-      // )
+      res.setHeader(
+        'Set-Cookie',
+        cookie.serialize(
+          'Access',
+          accessResponse.access,
+          { httpOnly: true, secure: false, sameSite: 'strict', maxAge: 60 * 60 * 1, path: '/' }
+        )
+      )
 
-      localStorage.setItem('Access', accessToken);
+      //localStorage.setItem('Access', accessToken);
 
     } catch (error) {
       if (error.reponse) {
