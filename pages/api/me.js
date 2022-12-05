@@ -2,7 +2,8 @@ import axios from 'axios';
 
 export default async (req, res) => {
     let cliente = {};
-    const accessToken = req.cookies.Access;
+    const accessToken = localStorage.getItem('Access');
+    //const accessToken = req.cookies.Access;
 
     if(req.method === 'GET') {
         const userConfig = {

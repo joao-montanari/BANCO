@@ -5,3 +5,10 @@
     align-items: center;
     justify-content: space-around;
 }
+
+@media only screen and (max-device-width: 1000px){
+    .container{
+        display: grid;
+        height: 800px;
+    }
+}

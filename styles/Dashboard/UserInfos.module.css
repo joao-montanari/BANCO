@@ -19,3 +19,11 @@
 .child h1{
     font-size: 45px;
 }
+
+.child button{
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
